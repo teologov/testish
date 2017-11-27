@@ -25,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/teologov/testish/issues"
   },
-  "homepage": "https://github.com/teologov/testish#readme"
+  "homepage": "https://github.com/teologov/testish#readme",
+  "dependencies": {
+    "chai": "4.1.2",
+    "chromedriver": "2.33.2",
+    "mocha": "4.0.1",
+    "selenium-webdriver": "3.6.0"
+  }
 }
