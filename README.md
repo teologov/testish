@@ -1,5 +1,5 @@
 # testish
-`Testish` is a minimalistic E2E framework powered by `Node.js` among with `selenium-webdriver` `chromedriver`, `Mocha` and `Chai`.
+`Testish` is a minimalistic E2E testing framework powered by `Node.js` among with `selenium-webdriver` `chromedriver`, `Mocha` and `Chai`.
 
 It provides you basic abstractions, utils, and a tests runner. The only thing left, is to write your tests and run them with `testish`!
 
