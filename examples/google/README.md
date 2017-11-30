@@ -1,0 +1,1 @@
+Run `node index` and the script will generate & output the command for starting tests. 
