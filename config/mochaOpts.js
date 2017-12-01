@@ -11,7 +11,7 @@ module.exports = {
   reporter: 'spec',
   timeout: 30000,
   bail: false,
-  useColors: false,
+  useColors: true,
   retries: 0,
   slow: 2000,
   ignoreLeaks: false,
