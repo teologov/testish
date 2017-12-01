@@ -5,4 +5,4 @@
 
 'use strict';
 
-module.exports = ['development', 'local', 'staging', 'production'];
+module.exports = ['local', 'development', 'staging', 'production'];

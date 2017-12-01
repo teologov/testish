@@ -8,7 +8,7 @@
 const ROOT = process.cwd();
 // eslint-disable-next-line
 console.log(
-  `Your command to run tests: TEST_ENV=production node ../../lib/index.js --root=${
+  `Your command to run tests: TEST_ENV=production node ../../index.js --root=${
     ROOT
   }`,
 );
