@@ -5,16 +5,14 @@
 
 'use strict';
 
-const { driver } = global;
-const { environment } = global.config;
+const { driver, config: { environment }, takeScreenshot } = global;
 
 describe('Testing Google', () => {
-  before(function*() {
+  it('Should open google.com', function*() {
     const { baseURL } = environment;
     yield driver.navigate().to(baseURL);
-  });
-
-  it('Should do something', function*() {
+    // will save the screenshot to examples/google/screenshots directory
+    yield* takeScreenshot('google_home_page');
     yield function(callback) {
       setTimeout(callback, 3000);
     };
