@@ -37,7 +37,7 @@ Currently supported environments are: `'local', 'development', 'staging', 'produ
 
 Obviously, you should export configuration for every environment you run against.
 
-Let's look at the configuration of the example above.
+Let's look at the configuration of the example project.
 
 ```javascript
 // index.js
