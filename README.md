@@ -1,5 +1,5 @@
 # Testish
-`Testish` is a minimalistic E2E testing framework powered by `Node.js` among with `selenium-webdriver` `chromedriver`, `Mocha` and `Chai`.
+`Testish` is a minimalistic E2E testing framework powered by `Node.js` among with `selenium-webdriver`, `chromedriver`, `Mocha` and `Chai`.
 
 It provides you basic abstractions, utils, and a tests runner. The only thing left, is to write your tests and run them with `Testish`!
 
@@ -26,7 +26,7 @@ Let's review the basic example, which you can find in `./examples` folder of thi
 
 ### Tests Folder
 To make `Testish` run your tests, you need to create `tests` folder and keep your tests inside it.
-#### How Tests Are Executed?
+#### How Are Tests Executed?
 Every time you start framework, `Testish` will add to `Mocha` global hooks first, which handle gracefully starting & failing of your tests. E.g. for every failed test will be created a screenshot. 
 
 Then framework will go to `tests` folder and will find all `.js` files recursively in it. Now it will run all found tests.
