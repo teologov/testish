@@ -6,19 +6,30 @@
 const webdriver = require('selenium-webdriver');
 const { until } = webdriver;
 
+const { driver, config } = global;
+
 module.exports = class TestishBasePageObject {
-  constructor(driver, config, locators) {
+  constructor(locators) {
     this.driver = driver;
     this.config = config;
     this.locators = locators;
   }
 
   /**
-   * Find element by locator
+   * Finds element by locator
    * @param {css|xpath} locator :: element selector
    **/
   *findElement(locator) {
     const el = yield this.driver.findElement(locator);
+    return el;
+  }
+
+  /**
+   * Finds elements by locator
+   * @param {css|xpath} locator :: element selector
+   **/
+  *findElements(locator) {
+    const el = yield this.driver.findElements(locator);
     return el;
   }
 
