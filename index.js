@@ -8,10 +8,11 @@
 require('chromedriver');
 
 const argv = require('minimist')(process.argv.slice(2));
-const ROOT = argv.root || process.cwd();
 const path = require('path');
 const chalk = require('chalk');
 const co = require('co');
+
+const ROOT = argv.root ? path.resolve(process.cwd(), argv.root) : process.cwd();
 
 const environments = require('./config/envs');
 const env = (global.TEST_ENV = process.env['TEST_ENV']);

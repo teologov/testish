@@ -7,9 +7,10 @@ const webdriver = require('selenium-webdriver');
 const { until } = webdriver;
 
 module.exports = class TestishBasePageObject {
-  constructor(driver, config) {
+  constructor(driver, config, locators) {
     this.driver = driver;
     this.config = config;
+    this.locators = locators;
   }
 
   /**
