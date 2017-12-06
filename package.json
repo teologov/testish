@@ -1,6 +1,6 @@
 {
   "name": "testish",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Minimalistic E2E framework powered by Node.js and selenium-webdriver",
   "main": "index.js",
   "scripts": {
